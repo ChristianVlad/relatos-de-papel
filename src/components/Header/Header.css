@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--card-bg, #ffffff);
+  border-bottom: 1px solid var(--border-color, #dcd6cd);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__logo {
+  font-family: 'Merriweather', 'Georgia', serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--color-primary, #7a4b2a);
+  text-decoration: none;
+}
+
+.header__nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.header__link {
+  text-decoration: none;
+  color: var(--text-color, #2c2c2c);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.header__link:hover {
+  color: var(--color-primary, #7a4b2a);
+}
+
+.header__user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
